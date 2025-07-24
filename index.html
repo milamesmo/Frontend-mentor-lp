@@ -11,78 +11,90 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
   <title>Frontend Mentor | Manage landing page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="section">
-    <div class="container container--flex container--row container--space-between container__margin--md">
-      <a href="#" class="logo"><img src="images/logo.svg"></a>
-      <button id="btn__menu"><img src="images/icon-hamburger.svg"></button>
-      <nav id="menu" class="hidden">
-        <ul class="nav__list">
-          <li class="nav__item">Pricing</li>
-          <li class="nav__item">Product</li>
-          <li class="nav__item">About Us</li>
-          <li class="nav__item">Careers</li>
-          <li class="nav__item">Community</li>
-        </ul>
-      </nav>
-      <button class="hidden">Get Started</button>
-    </div>
-  </header>
-  <section class="section">
-    <div class="container container--flex container__margin--md">
-      <img src="images/illustration-intro.svg">
-      <h1>Bring everyone together to build better products.</h1>
-      <p>
-        Manage makes it simple for software teams to plan day-to-day
-        tasks while keeping the larger team goals in view.
-      </p>
-      <button>Get Started</button>
-    </div>
-  </section>
+  <section class="section__first">
+    <header class="section">
+      <div class="container flex container--row container--space-between container__margin--md">
+        <a href="#" class="logo"><img src="images/logo.svg"></a>
+        <button id="btn__menu" class="button__nav menu__icon"><img src="images/icon-hamburger.svg"></button>
+        <nav id="menu" class="hidden">
+          <ul class="nav__list">
+            <li class="nav__item">Pricing</li>
+            <li class="nav__item">Product</li>
+            <li class="nav__item">About Us</li>
+            <li class="nav__item">Careers</li>
+            <li class="nav__item">Community</li>
+          </ul>
+        </nav>
+        <button class="hidden">Get Started</button>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container flex container__margin--md text--center">
+        <img src="images/illustration-intro.svg">
+        <h1 class="font__title text__title text--blue">Bring everyone together to build better products.</h1>
+        <p class="font__text margin--md text__body text--Gray line__height--md">
+          Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.
+        </p>
+        <button class="button button__first margin--sm be-vietnam-pro-medium text--lightGray">Get Started</button>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class=" container container--flex container__margin--md">
-      <h3>What’s different about Manage?</h3>
-      <p>
-        Manage provides all the functionality your team needs, without
-        the complexity. Our software is tailor-made for modern digital
-        product teams.
-      </p>
-      <h4>01</h4>
-      <p>Track company-wide progress</p>
-      <p>
+    <section class="section">
+      <div class=" container flex container__margin--md">
+        <h3 class="font__subtitle text__title text--blue  text--center">What’s different about Manage?</h3>
+        <p class="text__body text--Gray margin--md font__text--sm line__height--md  text--center">
+          Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.
+        </p>
+      </div>
+    </section>
+    <section class="flex">
+      <div class="title__body">
+        <div class="text__title numbers__number text--lightGray">01</div>
+        <h4 class="numbers__title text__title text--blue">Track company-wide progress</h4>
+      </div>
+
+      <p class="text__body text--Gray margin--xsm line__height--md">
         See how your day-to-day tasks fit into the wider vision. Go from
         tracking progress at the milestone level all the way done to the
         smallest of details. Never lose sight of the bigger picture again.
       </p>
-      <h4>02</h4>
-      <p>Advanced built-in reports</p>
-      <p>
+    </section>
+    <section class="flex">
+      <div class="title__body">
+        <div class="text__title numbers__number text--lightGray">02</div>
+        <h4 class="numbers__title text__title text--blue">Advanced built-in reports</h4>
+      </div>
+
+      <p class="text__body text--Gray margin--xsm line__height--md">
         Set internal delivery estimates and track progress toward company
         goals. Our customisable dashboard helps you build out the reports
         you need to keep key stakeholders informed.
       </p>
-      <h4>03</h4>
-      <p>Everything you need in one place</p>
-      <p>
+    </section>
+    <section class="flex">
+      <div class="title__body">
+        <div class="text__title numbers__number text--lightGray flex">03</div>
+        <h4 class="text__title numbers__title text--blue">Everything you need in one place</h4>
+      </div>
+
+      <p class="text__body text--Gray margin--xsm line__height--md">
         Stop jumping from one service to another to communicate, store files,
         track tasks and share documents. Manage offers an all-in-one team
         productivity solution.
       </p>
-    </div>
+    </section>
   </section>
 
   <section class="section">
-    <div class="container container--flex container__margin--md">
+    <div class="container flex container__margin--md">
       <h3>What they’ve said</h3>
       <img src="images/avatar-anisha.png">
       <p>Anisha Li</p>
@@ -109,18 +121,18 @@
         “Their software allows us to track, manage and collaborate on our projects
         from anywhere. It keeps the whole team in-sync without being intrusive.”
       </p>
-        <button>Get Started</button>
+      <button>Get Started</button>
     </div>
   </section>
   <section class="section">
-    <div class="container container--flex container__margin--md">
+    <div class="container flex container__margin--md">
       <h2>Simplify how your team works today.</h2>
       <button>Get Started</button>
     </div>
   </section>
   <footer class="section footer">
 
-    <div class="container container--flex container__margin--md">
+    <div class="container flex container__margin--md">
       <input type="text" placeholder="Updates in your inbox…"></input><button>Go
       </button>
       <ul>
