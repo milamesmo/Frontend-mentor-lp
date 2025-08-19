@@ -22,7 +22,7 @@
     margin: 2em 2em;
 }
 
-.margin--md{
+.margin--md {
     margin: 2em 0;
 }
 
@@ -32,6 +32,10 @@
 
 .line__height--md {
     line-height: 2rem;
+}
+
+.margin__depoiment {
+    margin: .8rem;
 }
 
 /* Section */
@@ -46,6 +50,7 @@
     background-position: 4em -9em;
     background-size: 35em;
 }
+
 
 /* Container */
 .container {
@@ -159,6 +164,12 @@ img {
     font-size: large;
 }
 
+.img__icon {
+    max-width: 25%;
+    align-self: center;
+    transform: translateY(2em);
+}
+
 /* Button */
 .button {
     display: flex;
@@ -199,4 +210,12 @@ img {
     position: relative;
     background-color: var(--VeryPaleRed);
     margin-left: 2rem;
+}
+
+.depoiment{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--VeryLightGray);
+    padding: 3em 1em 2em 1em;
+    text-align: center;
 }
