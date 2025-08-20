@@ -147,6 +147,10 @@
     color: var(--DarkGrayishBlue);
 }
 
+.text--veryLightGray{
+    color: var(--VeryLightGray);
+}
+
 .text--center {
     text-align: center;
 }
@@ -186,9 +190,31 @@ img {
     background-color: var(--BrightRed);
     color: var(--VeryLightGray);
     border-style: none;
+    font-weight: 700;
     border-radius: 10em;
     padding: 1em 2em;
     box-shadow: 0 0 15px var(--BrightRed);
+}
+
+.button__white{
+    background-color: var(--VeryLightGray);
+    color: var(--BrightRed);
+    font-weight: 700;
+     border-style: none;
+    border-radius: 10em;
+    padding: 1em 2.2em;
+    margin: 2em;
+}
+
+.button__footer{
+background-color: var(--BrightRed);
+    color: var(--VeryLightGray);
+    border-style: none;
+    font-weight: 700;
+    border-radius: 10em;
+    padding: 1.2em 2.5em;
+    margin: 0 .5em;
+    text-transform: uppercase;
 }
 
 .numbers__number {
@@ -218,4 +244,70 @@ img {
     background-color: var(--VeryLightGray);
     padding: 3em 1em 2em 1em;
     text-align: center;
+}
+
+.quickCall{
+    background-color: var(--BrightRed);
+    padding: 3em 1.5em;
+    text-align: center;
+    background-image: url(images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+}
+
+.text__simplify{
+    margin-top: 1.5em;
+}
+
+.container__simplify{
+    margin-bottom: 1.5em;
+}
+
+.footer{
+    background-color: var(--VeryDarkBlue);
+    color: var(--VeryLightGray);
+}
+
+.input__footer{
+     border-style: none;
+    border-radius: 10em;
+    padding: 1.2em 3em;
+    color: var(--VeryLightGray);
+}
+
+.newsletter{
+    margin-top: 2em;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 2em;
+}
+
+.footer__list--items{
+    list-style: none;
+}
+
+.nav__item{
+    margin: 1em;
+}
+
+.socials__list{
+    display: flex;
+    justify-content: space-between;
+margin: 2em;
+}
+
+.img__socials {
+    width: 10%;
+    margin: 0 .9em 3em .9em;
+}
+
+.logo__footer{
+    
+    width: 50%;
+    align-self: center;
+    margin-bottom: 3em;
 }
