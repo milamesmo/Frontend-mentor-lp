@@ -6,6 +6,7 @@
 
 :root {
     --BrightRed: hsl(12, 88%, 59%);
+    --LightRed: hsl(12, 62%, 79%);
     --DarkBlue: hsl(228, 39%, 23%);
     --DarkGrayishBlue: hsl(227, 12%, 61%);
     --VeryDarkBlue: hsl(233, 12%, 13%);
@@ -89,8 +90,48 @@
     padding: .8em 0 0 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+#menu {
+    width: 85%;
+    position: absolute;
+    margin: 4em 0em 0 0em;
+    padding: 1.8em 4em;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    z-index: 10;
+    border-radius: .2rem;
+}
+
+#menu__close {
+    display: none;
+}
+
 .nav__list {
     list-style-type: none;
+}
+
+.nav__list .nav__item {
+    padding: .2em .8em;
+    font-size: 1.2rem;
+}
+
+.nav__list .nav__item:hover {
+    background-color: var(--LightRed);
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 5;
+    transition: 0.3s ease;
 }
 
 /* Font */
@@ -166,6 +207,7 @@ img {
 
 .menu__icon {
     font-size: large;
+    cursor: pointer;
 }
 
 .img__icon {
@@ -175,8 +217,14 @@ img {
 }
 
 .img__socials {
-    width: 10%;
-    margin: 0 .9em 3em .9em;
+    width: 3em;
+    height: 3em;
+}
+
+
+.img__socials:hover path {
+    fill: var(--BrightRed);
+    cursor: pointer;
 }
 
 .logo__footer {
@@ -191,6 +239,7 @@ img {
     display: flex;
     align-self: center;
     margin: 0;
+    cursor: pointer;
 }
 
 .button__nav {
@@ -205,8 +254,15 @@ img {
     font-weight: 700;
     border-radius: 10em;
     padding: 1em 2em;
-    box-shadow: 0 0 15px var(--BrightRed);
+    box-shadow: 0px 5px 15px var(--BrightRed);
+
 }
+
+.button__first:hover {
+    opacity: .7;
+    transition: 0.2s ease;
+}
+
 
 .button__white {
     background-color: var(--VeryLightGray);
@@ -218,6 +274,10 @@ img {
     margin: 2em;
 }
 
+.button__white:hover {
+    color: var(--LightRed);
+}
+
 .button__footer {
     background-color: var(--BrightRed);
     color: var(--VeryLightGray);
@@ -227,11 +287,21 @@ img {
     padding: 1.2em 2.5em;
     margin: 0 .5em;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
+.button__footer:hover {
+    background-color: var(--LightRed);
+    transition: 0.2s ease;
+}
+
+
+
 /* Diferencial */
-.diferencial__margin{
-margin-bottom: 3em;
+.diferencial__margin {
+    margin-bottom: 3em;
 }
+
 .numbers__number {
     place-content: center;
     background-color: var(--BrightRed);
@@ -290,7 +360,7 @@ margin-bottom: 3em;
     border-style: none;
     border-radius: 10em;
     padding: 1.2em 3em;
-    color: var(--VeryLightGray);
+    color: var(--BrightRed);
 }
 
 .newsletter {
@@ -309,6 +379,16 @@ margin-bottom: 3em;
 
 .nav__item {
     margin: 1em;
+}
+
+.nav__list .nav__item:hover {
+    color: var(--DarkGrayishBlue);
+    cursor: pointer;
+}
+
+.footer__list .nav__item:hover {
+    color: var(--BrightRed);
+    cursor: pointer;
 }
 
 .socials__list {
