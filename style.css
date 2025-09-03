@@ -210,10 +210,17 @@ img {
     cursor: pointer;
 }
 
+.menu__icon--close {
+    cursor: pointer;
+    z-index: 10;
+}
+
 .img__icon {
     max-width: 25%;
     align-self: center;
-    transform: translateY(2em);
+    justify-content: center;
+    transform: translateY(3em);
+    margin-left: 38%;
 }
 
 .img__socials {
@@ -395,4 +402,28 @@ img {
     display: flex;
     justify-content: space-between;
     margin: 2em;
+}
+
+.depoiment__card {
+    display: none;
+}
+
+.depoiment__nav {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 2em 0;
+    margin: 0;
+    gap: .25em;
+}
+
+.depoiment__index {
+    display: block;
+    width: .75em;
+    height: .75em;
+    /* background-color: var(--LightRed); */
+    border-radius: .75em;
+    border: 2px solid var(--BrightRed);
 }

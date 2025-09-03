@@ -20,8 +20,9 @@
     <header class="section">
       <div class="container flex container--row container--space-between container__margin--md">
         <a href="#" class="logo"><img src="images/logo.svg"></a>
-        <button id="btn__menu" class="button__nav menu__icon"><img id="menu__open" src="images/icon-hamburger.svg" alt="Menu">
-  <img id="menu__close" src="images/icon-close.svg" alt="Fechar" style="display: none;"></button>
+        <button id="btn__menu" class="button__nav menu__icon"><img id="menu__open" src="images/icon-hamburger.svg"
+            alt="Menu">
+          <img id="menu__close" class="menu__icon--close" src="images/icon-close.svg" alt="Fechar"></button>
         <nav id="menu" class="hidden">
           <ul class="nav__list">
             <a href="#">
@@ -104,45 +105,60 @@
       </p>
     </section>
   </section>
-
   <section class="section">
     <div class="container flex container__margin--md">
       <h3 class="font__subtitle text__title text--blue text--center">What they’ve said</h3>
 
-      <img src="images/avatar-anisha.png" class="img__icon">
-      <div class="depoiment">
-        <p class="text__title text--blue text--center margin--xsm">Anisha Li</p>
-        <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
-          “Manage has supercharged our team’s workflow. The ability to maintain
-          visibility on larger milestones at all times keeps everyone motivated.”
-        </p>
-      </div>
+      <ul>
+        <li class="depoiment__card">
+          <img src="images/avatar-anisha.png" class="img__icon">
+          <div class="depoiment">
+            <p class="text__title text--blue text--center margin--xsm">Anisha Li</p>
+            <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
+              “Manage has supercharged our team’s workflow. The ability to maintain
+              visibility on larger milestones at all times keeps everyone motivated.”
+            </p>
+          </div>
+        </li>
+        <li class="depoiment__card">
+          <img src="images/avatar-ali.png" class="img__icon">
+          <div class="depoiment section--gray">
+            <p class="text__title text--blue text--center margin--xsm">Ali Bravo</p>
+            <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
+              “We have been able to cancel so many other subscriptions since using
+              Manage. There is no more cross-channel confusion and everyone is much
+              more focused.”
+            </p>
+          </div>
+        </li>
+        <li class="depoiment__card">
+          <img src="images/avatar-richard.png" class="img__icon">
+          <div class="depoiment section--gray">
+            <p class="text__title text--blue text--center margin--xsm">Richard Watts</p>
+            <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
+              “Manage allows us to provide structure and process. It keeps us organized
+              and focused. I can’t stop recommending them to everyone I talk to!”
+            </p>
+          </div>
+        </li>
+        <li class="depoiment__card">
+          <img src="images/avatar-shanai.png" class="img__icon">
+          <div class="depoiment">
+            <p class="text__title text--blue text--center margin--xsm">Shanai Gough</p>
+            <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
+              “Their software allows us to track, manage and collaborate on our projects
+              from anywhere. It keeps the whole team in-sync without being intrusive.”
+            </p>
+          </div>
+        </li>
+      </ul>
 
-      <img src="images/avatar-ali.png" class="img__icon">
-      <div class="depoiment section--gray">
-        <p class="text__title text--blue text--center margin--xsm">Ali Bravo</p>
-        <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
-          “We have been able to cancel so many other subscriptions since using
-          Manage. There is no more cross-channel confusion and everyone is much
-          more focused.”
-        </p>
-      </div>
-      <img src="images/avatar-richard.png" class="img__icon">
-      <div class="depoiment section--gray">
-        <p class="text__title text--blue text--center margin--xsm">Richard Watts</p>
-        <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
-          “Manage allows us to provide structure and process. It keeps us organized
-          and focused. I can’t stop recommending them to everyone I talk to!”
-        </p>
-      </div>
-      <img src="images/avatar-shanai.png" class="img__icon">
-      <div class="depoiment">
-        <p class="text__title text--blue text--center margin--xsm">Shanai Gough</p>
-        <p class="text__body text--Gray line__height--md font__text--md margin__depoiment">
-          “Their software allows us to track, manage and collaborate on our projects
-          from anywhere. It keeps the whole team in-sync without being intrusive.”
-        </p>
-      </div>
+      <ul class="depoiment__nav">
+        <li class="depoiment__index"></li>
+        <li class="depoiment__index"></li>
+        <li class="depoiment__index"></li>
+        <li class="depoiment__index"></li>
+      </ul>
 
       <button class="button button__first margin--sm be-vietnam-pro-medium text--lightGray">Get Started</button>
     </div>
